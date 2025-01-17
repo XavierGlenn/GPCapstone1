@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 //make the transaction variable and document it'll read from.
-public class transactions() {
+public class transactionLogic {
     private Object description;
     private Object vendor;
     private Object mytype;
@@ -16,7 +16,7 @@ public class transactions() {
     private LocalTime mytime;
     private double amount;
 
-    public transactions(LocalDate mydate, String description, String vendor, String paymenttype, double myamount) {
+    public transactionLogic(LocalDate mydate, String description, String vendor, String paymenttype, double myamount) {
         description = description;
         vendor = vendor;
         mytype = paymenttype;
@@ -104,7 +104,7 @@ public class transactions() {
                 String vendor = fields[3];
                 double amount = Double.parseDouble(fields[4]); // Assuming TransactionLogicAndIO is a valid class transactions.add(new TransactionLogicAndIO(date, time, amount)); } } catch (IOException e) { System.out.println("An error occurred while trying to access and read this file. Please try again."); e.printStackTrace(); } // Return an unmodifiable list of transactions return Collections.unmodifiableList(transactions); } }
 
-                transactions.add(new transactions(date, description, vendor, "all", amount)); }
+                transactions.add(new transactionLogic(date, description, vendor, "all", amount)); }
 
             class TransactionLogic {
 
