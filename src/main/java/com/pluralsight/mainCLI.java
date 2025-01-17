@@ -11,8 +11,7 @@ public class mainCLI {
 
     public void main(String[] args) {
 
-        menuLoop();
-    } //Menu? I think it goes here?
+        menuLoop(); } //Menu? I think it goes here?
 
     public static void menuLoop() {
         Scanner scanner = new Scanner(System.in);
