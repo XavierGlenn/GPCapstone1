@@ -1,0 +1,27 @@
+date|time|description|vendor|amount							
+2023-04-15|10:13:25|Ergonomic Keyboard|Amazon|-89.50							
+2023-04-15|11:15:00|Invoice 1001 Paid|Joe|1500.00							
+2023-04-16|12:05:54|Business Cards|Vistaprint|-104.22							
+2023-04-30|13:17:15|Folders|OfficeMax|-13.93							
+2023-05-13|11:32:43|Bubble Wrap|FedEx|-89.21							
+2023-05-17|15:24:16|Invoice 1002 paid|Brennan|303.50							
+2023-05-24|14:45:24|Notepads|Amazon|-31.13							
+2023-06-13|12:59:34|Shredders|ULINE|-460.08							
+2023-06-30|11:38:27|Fax Machine|Staples|-1329.85							
+2023-08-14|08:01:18|Invoice 1003 paid|Lainey|259.93							
+2023-08-15|09:53:37|Printer Ink|HP|-392.72							
+2023-08-31|07:57:42|Employee Retreat|Yosemite National Park|-1066.05							
+2023-09-08|13:26:01|Pens|OfficeMax|-17.24							
+2023-09-10|15:53:51|Invoice 1004 paid|Joe|549.60							
+2023-11-11|09:27:57|Employee Uniform Update|Uniforms Warehouse|-905.40							
+2024-01-19|10:11:14|Maintenance|Cat Scale|-588.60							
+2024-01-22|09:47:37|Desk|Amazon|-1273.09							
+2024-04-22|07:03:44|Invoice 1005 paid|Brennan|483.61							
+2024-05-04|12:46:05|Cleaning Crew|360 Precision Cleaning|-1069.58							
+2024-05-05|16:27:10|Windows 11 Professional Bundle|Microsoft|-778.15							
+2024-06-09|10:52:45|Security System|Ring|-403.96							
+2024-06-16|12:16:06|Invoice 1006 paid|Lainey|1386.05							
+2024-07-22|11:11:27|Computer|Dell|-841.80							
+2024-09-11|15:52:13|Lightbulbs|Home Depot|-61.32							
+							
+//make a test .csv!							
