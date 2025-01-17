@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
@@ -125,16 +126,17 @@ public class mainCLI {
                         //Reports Screen
                         case 'R':
 
-                            System.out.println("══════════════════════════════════════════════════════════════");
-                            System.out.println("Would you like to view reports sorted by:");
-                            System.out.println("Transactions Listed by Month to Date");
-                            System.out.println("Transactions From Previous Month");
-                            System.out.println("Transactions From Previous Year to Date");
-                            System.out.println("Transactions From Previous Year");
-                            System.out.println("Transactions From A Specific Vendor");
-                            System.out.println("0) Go to Previous Page");
-                            System.out.println("0) Go to Home Page");
-                            System.out.println("══════════════════════════════════════════════════════════════");
+//                            System.out.println("══════════════════════════════════════════════════════════════");
+//                            System.out.println("Would you like to view reports sorted by:");
+//                            System.out.println("Transactions Listed by Month to Date");
+//                            System.out.println("Transactions From Previous Month");
+//                            System.out.println("Transactions From Previous Year to Date");
+//                            System.out.println("Transactions From Previous Year");
+//                            System.out.println("Transactions From A Specific Vendor");
+//                            System.out.println("0) Go to Previous Page");
+//                            System.out.println("0) Go to Home Page");
+//                            System.out.println("══════════════════════════════════════════════════════════════");
+                            displayReports();
                             break;
 
                         //Ending Screen
@@ -150,4 +152,42 @@ public class mainCLI {
                 while (option[0] != 'X') ;
                 scanner.close();
             }
+    public static void displayReports() {
+        String reportOptions;
+        Scanner reader = new Scanner(System.in);
+        // another do while loop, will run unless 0 is selected
+        do {
+            System.out.println("Welcome to your reports. Please select one of the following options: " +
+                    "\n" + "1 - Month to Date" +
+                    "\n" + "2 - Previous Month" +
+                    "\n" + "3 - Year to Date" +
+                    "\n" + "4 - Previous Year" +
+                    "\n" + "5 - Search by Vendor" +
+                    "\n" + "0 - Back");
+
+            reportOptions = reader.nextLine();
+            // reader.nextLine();
+            switch (reportOptions) {
+                case "1":
+                    ReportsScreen.displayMonthToDate();
+                    break;
+                case "2":
+                    ReportsScreen.displayPreviousMonth();
+                    break;
+                case "3":
+                    ReportsScreen.displayYearToDate();
+                    break;
+                case "4":
+                    ReportsScreen.displayPreviousYear();
+                    break;
+                case "5":
+                    ReportsScreen.searchVendor();
+                    break;
+                case "0":
+                    break;
+                default:
+                    System.out.println("That is not a valid selection. Please try again.");
+            }
+        } while (!reportOptions.equals("0"));
+    }
         }

@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 
 
             //And now to bring it all together in one document... hopefully.
-            public static void displayReport (List <transaction> filteredTransactions);
+            public static void displayReport(List <transaction> filteredTransactions);
             if (filteredTransactions.isEmpty()) {
                 System.out.println("No transactions found for the specified range.");
             } else {
@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
                                     .collect(Collectors.toList());
 
                             //Back to more familiar waters.
-                            public static void searchAndDisplayByVendor (List <transaction> transactions) {
+                            public static void searchAndDisplayByVendor(List <transaction> transactions) {
                                 Scanner scanner = new Scanner(System.in);
                                 System.out.println("Enter the vendor's name to start your search: ");
                                 vendorName = scanner.nextLine();
